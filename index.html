@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>极光影院 | 全网VIP视频免费看</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link href="https://cdn.bootcdn.net/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="container">
+        <header>
+            <h1>极光影院 <span class="badge">PRO</span></h1>
+            <p class="subtitle">沉浸式 VIP 视频解析平台 / 4K高清 / 无广告</p>
+        </header>
+
+        <!-- 平台导航区 -->
+        <div class="platform-nav glass-panel">
+            <h2 class="section-title"><i class="fas fa-compass"></i> 用于获取视屏链接的源站 (各大平台)</h2>
+            <div class="platform-grid">
+                <a href="https://www.iqiyi.com" target="_blank" class="platform-card iqiyi">
+                    <img src="https://www.iqiyi.com/favicon.ico" alt="爱奇艺">
+                    <span>爱奇艺</span>
+                </a>
+                <a href="https://v.qq.com" target="_blank" class="platform-card tencent">
+                    <img src="https://v.qq.com/favicon.ico" alt="腾讯视频">
+                    <span>腾讯视频</span>
+                </a>
+                <a href="https://www.youku.com" target="_blank" class="platform-card youku">
+                    <img src="https://www.youku.com/favicon.ico" alt="优酷">
+                    <span>优酷</span>
+                </a>
+                <a href="https://www.mgtv.com" target="_blank" class="platform-card mgtv">
+                    <img src="https://www.mgtv.com/favicon.ico" alt="芒果TV">
+                    <span>芒果TV</span>
+                </a>
+                <a href="https://www.bilibili.com" target="_blank" class="platform-card bilibili">
+                    <img src="https://www.bilibili.com/favicon.ico" alt="哔哩哔哩">
+                    <span>哔哩哔哩</span>
+                </a>
+            </div>
+            <p class="hint-text"><i class="fas fa-info-circle"></i> 提示：点击上方图标前往对应网站，复制视频链接后通过下方输入框解析观看。</p>
+        </div>
+
+        <!-- 播放器主界面 -->
+        <main class="glass-panel">
+
+            <!-- 输入区域 -->
+            <div class="input-group">
+                <input type="text" id="video-url" placeholder="请粘贴视频播放页网址 (例如: 爱奇艺、腾讯、优酷...)" autocomplete="off">
+                <button id="play-btn" class="play-btn">
+                    <i class="fas fa-play"></i> 立即播放
+                </button>
+            </div>
+
+            <!-- 线路选择 -->
+            <div class="api-selector-container">
+                <label class="selector-label" id="current-api-name">当前线路: 推荐线路</label>
+                <div class="api-grid" id="api-selector">
+                    <!-- JS动态生成 -->
+                </div>
+            </div>
+
+            <!-- 播放器窗口 -->
+            <div id="player-container" class="player-wrapper">
+                <div class="loading-overlay">
+                    <div class="text-center">
+                        <div class="spinner"></div>
+                        <p>等待视频载入...</p>
+                    </div>
+                </div>
+                <iframe id="player-frame" allowfullscreen allow="autoplay; fullscreen"></iframe>
+            </div>
+
+        </main>
+
+        <!-- 使用指南 -->
+        <section class="guide-grid">
+            <div class="guide-card">
+                <div class="icon-box"><i class="fas fa-copy"></i></div>
+                <h3 class="guide-title">1. 复制链接</h3>
+                <p class="guide-text">打开各大视频网站，找到想看的VIP视频，复制浏览器地址栏的链接。</p>
+            </div>
+            <div class="guide-card">
+                <div class="icon-box"><i class="fas fa-mouse-pointer"></i></div>
+                <h3 class="guide-title">2. 选择线路</h3>
+                <p class="guide-text">如果默认线路无法播放或卡顿，请尝试切换其他备用线路。</p>
+            </div>
+            <div class="guide-card">
+                <div class="icon-box"><i class="fas fa-film"></i></div>
+                <h3 class="guide-title">3. 享受大片</h3>
+                <p class="guide-text">点击播放按钮，等待几秒解析完成，即可享受高清无广告观影。</p>
+            </div>
+        </section>
+
+        <footer>
+            <p>&copy; 2026 极光影院 Project. 仅供技术研究，请支持正版。</p>
+        </footer>
+    </div>
+
+    <script type="module" src="assets/js/app.js"></script>
+</body>
+
+</html>

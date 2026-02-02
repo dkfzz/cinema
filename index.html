@@ -4,6 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+    <meta name="referrer" content="no-referrer">
     <title>极光影院 | 全网VIP视频免费看</title>
     <link rel="stylesheet" href="assets/css/style.css">
     <link href="https://cdn.bootcdn.net/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
@@ -54,6 +56,19 @@
                 <button id="play-btn" class="play-btn">
                     <i class="fas fa-play"></i> 立即播放
                 </button>
+            </div>
+
+            <!-- 历史记录区域 -->
+            <div id="history-section" class="history-section">
+                <div class="history-header">
+                    <label class="selector-label"><i class="fas fa-history"></i> 最近播放</label>
+                    <button id="clear-history" class="clear-history-btn">
+                        <i class="fas fa-trash-alt"></i> 清空
+                    </button>
+                </div>
+                <div class="api-grid" id="history-list">
+                    <!-- JS动态生成 -->
+                </div>
             </div>
 
             <!-- 线路选择 -->

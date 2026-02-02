@@ -246,6 +246,36 @@ input[type="text"]::placeholder {
     margin-bottom: 1.5rem;
 }
 
+/* 历史记录区域 */
+.history-section {
+    display: none;
+    margin-bottom: 1.5rem;
+}
+
+.history-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.8rem;
+}
+
+.history-header .selector-label {
+    margin-bottom: 0;
+}
+
+.clear-history-btn {
+    background: transparent;
+    border: none;
+    color: var(--text-muted);
+    cursor: pointer;
+    font-size: 0.8rem;
+    transition: color 0.3s ease;
+}
+
+.clear-history-btn:hover {
+    color: var(--neon-blue);
+}
+
 .selector-label {
     display: block;
     margin-bottom: 1rem;

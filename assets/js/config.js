@@ -5,16 +5,14 @@
 const apiConfig = {
     currentApiIndex: 0,
     apis: [
-        { name: "✨ 纯净解析 (推荐)", url: "https://jx.xmflv.com/?url=" },
-        { name: "🚀 极速线路 (B站)", url: "https://jx.m3u8.tv/jiexi/?url=" },
-        { name: "⚡ 777解析", url: "https://jx.777jiexi.com/player/?url=" },
-        { name: "🎯 Boikai解析", url: "https://www.playm3u8.cn/jiexi.php?url=" },
-        { name: "💎 JSON解析", url: "https://jx.jsonplayer.com/player/?url=" },
-        { name: "🐏 羊驼解析", url: "https://jx.yangtuo.org/v/?url=" },
-        { name: "稳定通用1", url: "https://www.ck-qi.com/chishi/player/?url=" },
-        { name: "稳定通用2", url: "https://vip.bljiex.com/?v=" },
-        { name: "备用线路1", url: "https://jx.yparse.com/index.php?url=" },
-        { name: "备用线路2", url: "https://www.8090g.cn/?url=" }
+        { name: "✨ 全能解析 (推荐)", url: "https://im1907.top/?jx=" },
+        { name: "🚀 纯净高清", url: "https://jx.xmflv.com/?url=" },
+        { name: "🎯 B站/腾讯/爱奇艺", url: "https://jx.playerjy.com/?url=" },
+        { name: "⚡ 极速稳定", url: "https://jx.aidouer.net/?url=" },
+        { name: "💎 CKPlayer", url: "https://www.ckplayer.vip/jiexi/?url=" },
+        { name: "📱 M3U8专用", url: "https://jx.m3u8.tv/jiexi/?url=" },
+        { name: "🌙 夜幕解析", url: "https://www.yemu.xyz/?url=" },
+        { name: "🛡️ 通用备用", url: "https://www.8090g.cn/?url=" }
     ]
 };
 
